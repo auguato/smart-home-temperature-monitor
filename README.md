@@ -9,3 +9,8 @@ A simulated IoT system that monitors temperature and humidity using Python, MQTT
 - Grafana dashboard with live charts and threshold alerts
 
 ## Project Structure
+  ## Tech Stack
+- Python 3.11
+- paho-mqtt
+- InfluxDB
+- Grafana
