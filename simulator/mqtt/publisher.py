@@ -13,12 +13,11 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'simulator'))
 from sensor_sim import get_simulated_reading
 
-# ── HiveMQ Free Cluster settings ──────────────────────────────────────────────
-BROKER   = "broker.hivemq.com"   # free public broker (no auth needed)
+
+BROKER   = "broker.hivemq.com"   
 PORT     = 1883
 TOPIC    = "home/temperature"
-INTERVAL = 10                    # seconds between publishes
-# ──────────────────────────────────────────────────────────────────────────────
+INTERVAL = 10                  
 
 
 def on_connect(client, userdata, flags, rc):
