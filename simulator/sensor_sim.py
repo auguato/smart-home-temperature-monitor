@@ -19,13 +19,13 @@ def get_simulated_reading() -> dict:
     now = datetime.now()
     hour = now.hour + now.minute / 60.0
 
-    # Sine wave: coldest at 4am (~22°C), warmest at 2pm (~32°C)
+    
     base_temp = 27.0
     amplitude = 5.0
     phase = (hour - 14) * (2 * math.pi / 24)
     temperature = base_temp + amplitude * math.sin(phase) + random.uniform(-0.5, 0.5)
 
-    # Humidity inversely correlated with temperature
+   
     base_humidity = 70.0
     humidity = base_humidity - (temperature - base_temp) * 1.5 + random.uniform(-2, 2)
     humidity = max(30.0, min(95.0, humidity))
